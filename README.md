@@ -1,10 +1,14 @@
 # Bug-Scraper-Summarizer
 Bugzilla, GNU and Debian Bugs Scrapped with playwright and summarized with GPT 4o-mini
 
+<br />
+
 
 
 ## Overview
 This project automates the extraction and summarization of bug reports from various bug tracking systems, including Bugzilla, Debian BTS, and GNU Bug Tracker. Using Playwright for web scraping and GPT-4 for summarization, the system collects raw bug data and transforms it into structured, concise summaries. The final output is stored in an organized format, such as Excel files, for easy interpretation and analysis.
+
+<br />
 
 
 ---
@@ -22,14 +26,19 @@ This project automates the extraction and summarization of bug reports from vari
   - Extracts key details like bug descriptions, reproduction steps, classifications, and system-related information.
   - Stores the summarized data in Excel files.
 
----
+<br />
+
+
+  ---
 
 ## **Prerequisites**
 - Python 3.8 or later
 - Required Python libraries (see `requirements.txt`)
 
----
+<br />
 
+
+  ---
 
 ## **Steps to Execute**
 
@@ -75,6 +84,10 @@ This project automates the extraction and summarization of bug reports from vari
 7. **Review Output**
     Final outputs are stored in the `output/` directory.
     Open the Excel files to review the structured summaries of bug reports.
+   
+<br />
+
+  ---
 
 **Additional Notes**
 
