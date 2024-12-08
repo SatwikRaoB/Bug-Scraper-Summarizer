@@ -44,7 +44,7 @@ This project automates the extraction and summarization of bug reports from vari
 3. **Set Up Environment Variables**
     Create a `.env` file in the root directory with the following variables:
     ```env
-    OPENAI_API_KEY=your_openai_api_key
+    setx OPENAI_API_KEY="your_openai_api_key"
     ```
 
 4. **Prepare Input Data**
