@@ -50,11 +50,11 @@ This project automates the extraction and summarization of bug reports from vari
     ```env
     setx OPENAI_API_KEY="your_openai_api_key"
     ```
-    Get your OPENAI api key here: 
+    Get your OPENAI api key here: https://platform.openai.com/api-keys
 
 4. **Prepare Input Data**
     Place an Excel file containing bug URLs in the `data/` directory.
-    Ensure the file has 
+    Ensure the file has "LINK" column with the respective url of the bug description.
 
 5. **Run Scraping Scripts**
     Execute the scraping scripts for each bug tracking system:
