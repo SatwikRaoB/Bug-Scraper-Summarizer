@@ -2,8 +2,10 @@
 Bugzilla, GNU and Debian Bugs Scrapped with playwright and summarized with GPT 4o-mini
 
 
+
 ## Overview
 This project automates the extraction and summarization of bug reports from various bug tracking systems, including Bugzilla, Debian BTS, and GNU Bug Tracker. Using Playwright for web scraping and GPT-4 for summarization, the system collects raw bug data and transforms it into structured, concise summaries. The final output is stored in an organized format, such as Excel files, for easy interpretation and analysis.
+
 
 ---
 
@@ -13,6 +15,7 @@ This project automates the extraction and summarization of bug reports from vari
   - Supports Bugzilla, Debian BTS, and GNU Bug Tracker.
   - Handles JavaScript-heavy sites, paginated content, and structured HTML layouts.
   - Saves raw bug data in a structured `.txt` format.
+    
 
 - **Summarization**:
   - Processes raw bug data using GPT-4 for natural language summarization.
@@ -26,6 +29,7 @@ This project automates the extraction and summarization of bug reports from vari
 - Required Python libraries (see `requirements.txt`)
 
 ---
+
 
 ## **Steps to Execute**
 
@@ -46,20 +50,17 @@ This project automates the extraction and summarization of bug reports from vari
     ```env
     setx OPENAI_API_KEY="your_openai_api_key"
     ```
+    Get your OPENAI api key here: 
 
 4. **Prepare Input Data**
     Place an Excel file containing bug URLs in the `data/` directory.
-    Ensure the file follows this format:
-    - **Bugzilla**: URLs listed in column A.
-    - **Debian BTS**: URLs listed in column B.
-    - **GNU Bug Tracker**: URLs listed in column C.
+    Ensure the file has 
 
 5. **Run Scraping Scripts**
     Execute the scraping scripts for each bug tracking system:
     ```bash
-    python scraping/bugzilla_scraper.py
-    python scraping/debian_scraper.py
-    python scraping/gnu_scraper.py
+    python bugzilla_scraper.py
+    python gnu_scraper.py (run the same for debian website)
     ```
     Scraped data is saved in `.txt` files in the `output/` directory.
     Errors, if any, are logged in the `logs/` directory.
@@ -67,17 +68,11 @@ This project automates the extraction and summarization of bug reports from vari
 6. **Run Summarization Script**
     Process the scraped data to generate summaries:
     ```bash
-    python summarization/gpt4_summarizer.py
+    python summarizer.py
     ```
     Summarized data is saved in Excel format in the `output/` directory.
 
-7. **Combine Summarized Data (Optional)**
-    To generate a single Excel file with all summarized bug data:
-    ```bash
-    python utils/combine_output.py
-    ```
-
-8. **Review Output**
+7. **Review Output**
     Final outputs are stored in the `output/` directory.
     Open the Excel files to review the structured summaries of bug reports.
 
