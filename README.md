@@ -27,7 +27,7 @@ This project automates the extraction and summarization of bug reports from vari
 
 ---
 
-**Steps to Execute**
+## **Steps to Execute**
 
 1. **Clone the Repository**
     ```bash
